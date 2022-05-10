@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Peliculas</title>
     <link rel="stylesheet" href="css/archivos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -16,17 +16,6 @@
             background-repeat: no-repeat;
             height: 100%;
         }
-
-        input[type=reset]{ /*BOTON DE TIPO RESET CON UN FONDO VERDE Y LETRAS BLANCAS*/
-        width: 100%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-}
     </style>
 </head>
 <body>
@@ -42,7 +31,7 @@
                 <a class="nav-link" href="Registro.html" target="_blank">Registrarse</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Peliculas.html" target="_blank">Peliculas</a>
+                <a class="nav-link" href="index.html" target="_blank">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Informacion.html" target="_blank">Informacion</a>
@@ -54,7 +43,7 @@
                 <a class="nav-link" href="Usuario.html" target="_blank">Usuario</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Cliente.html" target="_blank">cliente</a>
+                <a class="nav-link" href="Cliente.html" target="_blank">Cliente</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -65,25 +54,41 @@
         </div>
       </nav>
 <br>
-<div class="container"> <!--CONTENEDOR QUE VA A ALMACENAR TODO LOS CODIGOS INGRESADOS-->
-<div class="row centrado"> <h1>Pelis++</h1></div>
-<div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-      <p class="centrado"> Para acceder al contenido debes Registrarte.
-      </p>
-    
-      <center><a href="Registro.html" target="_blank"
-        class="btn btn-success"> Registrarse</a></center>
 
-    </div>
-    <div class="col-md-2">
-      
-    </div>
-    
-</div>
-</div>
+    <div class="container"> <!--CONTENEDOR QUE VA A ALMACENAR TODO LOS CODIGOS INGRESADOS-->
+      <h1 class="centrado"> Peliculas Disponibles</h1>      
+          <div class="row separacion_superior" ALIGN="CENTER">
+              <img src="imagenes/harry potter.jpg" alt="No hay Imagen" style="width:450px;height: 450px;"
+              class="img_responsive">
 
-    
+              <h3> Nombre: Harry Potter y la piedra Filosofal<br> Duracion: 02:32:00<br>
+            Fecha de Estreno: 29 de noviembre de 2001 <br> Director: Chris Columbus</h3>
+            <a href="harrypotter.html" target="_blank" 
+            class="btn btn-success">Ver Pelicula</a>
+            </div>
+<br>
+            <div class="row separacion_superior" ALIGN="CENTER">
+                <img src="imagenes/rapidoyfurioso.jpg" alt="No hay Imagen" style="width:450px;height: 450px;"
+                class="img_responsive">
+
+                <h3> Nombre: Rapidos y Furiosos <br> Duracion: 01:46:00 <br>
+                Fecha de Estreno: 22 de junio 2001 <br> Director: Bob Cohen</h3>
+                <a href="rapidoyfurioso.html" target="_blank"
+                class="btn btn-success">Ver Pelicula</a>
+                
+            </div>
+<br>
+            <div class="row separacion_superior" ALIGN="CENTER">
+                <img src="imagenes/spiderman.jpg" alt="No hay Imagen" style="width:450px;height: 450px;"
+                class="img_responsive">
+
+                <h3> Nombre: Spiderman <br> Duracion: 02:10:00 <br>
+                Fecha de Estreno: 16 de mayo de 2002 <br> Directores: Sam Raimi</h3>
+                <a href="spiderman.html" target="_blank"
+                class="btn btn-success"> Ver Pelicula</a>
+            </div>
+<br>            
+      </div>
+
 </body>
 </html>

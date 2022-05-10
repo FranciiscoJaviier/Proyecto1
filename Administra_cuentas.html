@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculazas de Felipe</title>
+    <link rel="stylesheet" href="css/archivos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body{ /*MOSTRAR LA PAGINA CON EL FONDO DE TODAS LAS HTML, CUBRIENDO TODO EL FONDO DE LA PAGINA*/
+            background-image:url("imagenes/fondo.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!--CREA EL MENU CON LOS LINKS DE TODAS LAS PAGINAS -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">PF</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" target="_blank">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Peliculas.html" target="_blank">Peliculas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Informacion.html">Informacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="api.html">api</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="usuario.html">usuario</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Buscar">
+              <button class="btn btn-primary" type="button">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container"> <!--CONTENEDOR QUE VA A ALMACENAR TODO LOS CODIGOS INGRESADOS-->
+        <div class="row centrado"> <h1>CUENTAS REGISTRADAS A LA FECHA</h1></div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <table  class="table table-dark table-striped"> <!--Muestra la tabla en formato oscuro pero de forma degradada-->
+                <tr> <!--define las filas de celdas-->
+                  <th>Nombre Completo</th> <!--atributos-->
+                  <th>Nombre De usuario</th> <!--atributos-->
+                  <th>Correo Electronico</th><!--atributos-->
+                  <th>Creacion de Cuenta</th><!--atributos-->
+                  <th>Estado de Cuenta</th><!--atributos-->
+                  <th>Tipo de Usuario</th><!--atributos-->
+                  
+                </tr>
+                <tr> <!--define las filas de celdas-->
+                  <td>Francisco Flores</td><!--atributos-->
+                  <td>PanchoUc</td><!--atributos-->
+                  <td>fco.javiier0@gmail.com</td><!--atributos-->
+                  <td>23-12-2021</td><!--atributos-->
+                  <td>Activa</td><!--atributos-->
+                  <td>Dueño</td><!--atributos-->
+                </tr>
+                <tr> <!--define las filas de celdas-->
+                    <td>Patitooo</td> <!--atributos-->
+                    <td>P4t0</td><!--atributos-->
+                    <td>patitoo20@gmail.com</td><!--atributos-->
+                    <td>22-05-2022</td><!--atributos-->
+                    <td>Activa</td><!--atributos-->
+                    <td>Usuario</td><!--atributos-->
+                  </tr>
+                  <tr> <!--define las filas de celdas-->
+                    <td>Diego Buonanotte</td> <!--atributos-->
+                    <td>Diegoo</td><!--atributos-->
+                    <td>diego.buo@gmail.com</td><!--atributos-->
+                    <td>19-03-2022</td><!--atributos-->
+                    <td>Activa</td><!--atributos-->
+                    <td>Usuario</td><!--atributos-->
+                  </tr>
+                  <tr> <!--define las filas de celdas-->
+                    <td>Gato Cosmico</td><!--atributos-->
+                    <td>pr1m@t3_.</td><!--atributos-->
+                    <td>ldfkjgdfklgjd@gmail.com</td><!--atributos-->
+                    <td>21-03-2022</td><!--atributos-->
+                    <td>Activa</td><!--atributos-->
+                    <td>Usuario</td><!--atributos-->
+                  </tr>
+                  <tr>
+                    <td>Marcela Paz</td> <!--define las filas de celdas-->
+                    <td>Marceelaa.-</td> <!--atributos-->
+                    <td>m4cel4@hotmail.com</td><!--atributos-->
+                    <td>21-03-2022</td><!--atributos-->
+                    <td>Activa</td><!--atributos-->
+                    <td>Usuario</td><!--atributos-->
+                  </tr>
+                  <tr> <!--define las filas de celdas-->
+                    <td>AAAAAAA</td><!--atributos-->
+                    <td>AAAAAAAA</td><!--atributos-->
+                    <td>aaaaaa@gmail.com</td><!--atributos-->
+                    <td>21-03-2022</td><!--atributos-->
+                    <td>Activa</td><!--atributos-->
+                    <td>Usuario</td><!--atributos-->
+                  </tr>
+                
+              </table>
+            </div>
+            <div class="col-md-2"></div>
+            
+        </div>
+        </div>
+
+      
+</body>
+</html>

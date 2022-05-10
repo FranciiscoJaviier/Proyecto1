@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/archivos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body{ /*MOSTRAR LA PAGINA CON EL FONDO DE TODAS LAS HTML, CUBRIENDO TODO EL FONDO DE LA PAGINA*/
+            background-image:url("imagenes/fondo.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!--CREA EL MENU CON LOS LINKS DE TODAS LAS PAGINAS -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">PF</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Registro.html" target="_blank">Registrarse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Peliculas.html" target="_blank">Peliculas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Informacion.html" target="_blank">Informacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="api.html" target="_blank">Api</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Usuario.html" target="_blank">usuario</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" target="_blank">Inicio</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Buscar">
+              <button class="btn btn-primary" type="button">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container"> <!--CONTENEDOR QUE VA A ALMACENAR TODO LOS CODIGOS INGRESADOS-->
+          <div class="row">
+            <div class="col-md-4 mt-1"> <!--CREA UN RECUADRO CON UN MARGEN PARA PODER INGRESAR ELEMENTOS-->
+                <div class="card text-center sidebar"> <!--CONTENEDOR QUE VA A ALMACENAR LA FOTO DEL CLIENTE Y SU NOMBRE DE USUARIO-->
+                    <div class="card-body">
+                        <img src="imagenes/alberto.jpg" alt="No hay imagen" class="rounded-circle" height="250" width="250"> <!--IMAGEN DEL CLIENTE PERO DE FORMA REDONDA -->
+                        <div class="mt-3">
+                            <h3>Alberto Martinez</h3>
+
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8 mt-1"> <!-- VA A ALMACENAR TODO LOS CODIGOS INGRESADOS EN ESTA  CLASE-->
+                <div class="card mb-3 content"> <!--CONTENEDOR QUE VA A ALMACENAR LA INFORMACION PERSONAL DEL CLIENTE-->
+                    <h1 class="m-3 pt-3">Informacion Personal</h1>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>Nombre Completo</h5>
+                            </div>
+                            <div class="col-md-9 text-secondary">  <!--VA A MOSTRAR EL NOMBRE INGRESADO AL LADO PERO CON UN FORMATO MAS CLARO-->
+                                Alberto Eduardo Martinez Martinez
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>E-mail:</h5>
+                            </div>
+                            <div class="col-md-9 text-secondary"> <!--VA A MOSTRAR EL NOMBRE INGRESADO AL LADO PERO CON UN FORMATO MAS CLARO-->
+                                Alb.mar@gmail.com
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>Nombre de usuario</h5>
+                            </div>
+                            <div class="col-md-9 text-secondary"><!--VA A MOSTRAR EL NOMBRE INGRESADO AL LADO PERO CON UN FORMATO MAS CLARO-->
+                                Alberto Martinez
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row"> 
+                            <div class="col-md-3">
+                                <h5>Informacion Adicional Cliente</h5>
+                            </div>
+                            <div class="col-md-9 text-secondary"> <!--VA A MOSTRAR EL NOMBRE INGRESADO AL LADO PERO CON UN FORMATO MAS CLARO-->
+                                Soy Alberto Martinez, alias el Albertito, tengo 25 años soy de la comuna de La Florida y me gustan mucho las peliculas
+                                Soy un amante del cine.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 content"> <!--CONTENEDOR QUE VA A ALMACENAR TODO LOS CODIGOS INGRESADOS-->
+                    <h1 class="m-3">Acerca del Proyecto</h1>
+                    <div class="card-body"> <!--CONTENEDOR QUE VA A MOSTRAR EL NOMBRE DEL PROYECTO -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>Nombre del proyecto</h5>
+                            </div>
+                            <div class="col-md-9 text-secondary"> <!--VA A MOSTRAR EL NOMBRE INGRESADO AL LADO PERO CON UN FORMATO MAS CLARO-->
+                                Pelis++
+                            </div>
+                            <HR></HR>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5>Creador/es:</h5>
+                                </div>
+                                <div class="col-md-9 text-secondary"> <!--VA A MOSTRAR EL NOMBRE INGRESADO AL LADO PERO CON UN FORMATO MAS CLARO-->
+                                    Creador Francisco Flores.
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5>Descripcion del Proyecto</h5>
+                                </div>
+                                <div class="col-md-9 text-secondary"> <!--VA A MOSTRAR EL NOMBRE INGRESADO AL LADO PERO CON UN FORMATO MAS CLARO-->
+                                    Pelis++ se trata de traer las mejores peliculas que se encuentran en la cartelera.
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                </div>
+            </div>
+            
+          </div>
+      </div>
+</body>
+</html>
